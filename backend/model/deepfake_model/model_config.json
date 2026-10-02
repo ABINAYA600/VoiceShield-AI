@@ -1,0 +1,23 @@
+{
+    "project": "VoiceShield AI",
+    "model_type": "Wav2Vec2 Anti-Spoofing",
+    "base_model": "facebook/wav2vec2-base",
+    "checkpoint_source": "caa-speech-detection-asvspoof2019/wav2vec2",
+    "dataset": "ASVspoof 2019 Logical Access",
+    "task": "Binary Voice Deepfake Detection",
+    "classes": {
+        "0": "bonafide",
+        "1": "spoof"
+    },
+    "sample_rate": 16000,
+    "target_samples": 64000,
+    "duration_seconds": 4,
+    "classification_head": [
+        "Linear(768,256)",
+        "GELU",
+        "Dropout(0.1)",
+        "Linear(256,2)"
+    ],
+    "encoder": "Frozen",
+    "device": "cpu"
+}

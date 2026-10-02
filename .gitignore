@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Environment variables
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+
+# Node
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# Python uploads
+backend/uploads/
+uploads/
+
+# Audio files
+*.wav
+*.flac
+*.mp3
+*.webm
+*.ogg
+
+# Datasets
+dataset/
+datasets/
+
+# Large model files
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
